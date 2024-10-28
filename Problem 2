@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+//function delcaration
+void truck_weight_check(int load_weight);
+int main() {
+	int load_weight;
+	cout << "How heavy?" << endl;
+	cin >> load_weight;
+	//function call
+	truck_weight_check(load_weight);
+}
+
+void truck_weight_check(int load_weight) {
+	if (load_weight > 1200)
+		cout << "overweight!" << endl;
+	else if (load_weight < 1200)
+		cout << "Within limit..." << endl;
+}
