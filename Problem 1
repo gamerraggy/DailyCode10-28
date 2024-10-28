@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+//function delcaration
+void docking_countdown();
+
+int main() {
+	//function call
+	docking_countdown();
+}
+
+void docking_countdown() {
+	for (int r = 20; r > 0; r -= 3)
+		cout << r << " ";
+	cout << "Docking compete" << endl;
+}
