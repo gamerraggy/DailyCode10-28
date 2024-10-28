@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+//function delcaration
+void get_ticket_price(int visitor_age);
+int main() {
+	int visitor_age;
+	cout << "how old" << endl;
+	cin >> visitor_age;
+	//function call
+	get_ticket_price(visitor_age);
+}
+
+void get_ticket_price(int visitor_age) {
+	if (visitor_age <= 10)
+		cout << "8$" << endl;
+	else if (visitor_age <= 60)
+		cout << "18$" << endl;
+	else
+		cout << "12$" << endl;
+}
