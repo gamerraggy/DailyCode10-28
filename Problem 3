@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+//function delcaration
+void school_zone_signal(string signal_color);
+int main() {
+	string signal_color;
+	cout << "what color" << endl;
+	cin >> signal_color;
+	//function call
+	school_zone_signal(signal_color);
+}
+
+void school_zone_signal(string signal_color) {
+	if (signal_color == "flashing red")
+		cout << "stop" << endl;
+	else if (signal_color == "yellow")
+		cout << "Within limit..." << endl;
+	else
+		cout << "Go!!!!!" << endl;
+}
